@@ -1,29 +1,28 @@
 using NET_9_Business_App_MinimalAPI_Results.Models;
+using NET_9_Business_App_MinimalAPI_Results.Results;
 using static NET_9_Business_App_MinimalAPI_Results.Models.EmployeesRepository;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddProblemDetails();//adds the problem details middleware to the pipeline
+
 var app = builder.Build();
 
-app.UseRouting();
+if (!app.Environment.IsDevelopment())//always place first in middleware pipeline for all to use
+{
+    app.UseExceptionHandler();//defaults to RFC 7807 standard as a JSON obj output with ProblemDetails service
+}
 
+app.UseStatusCodePages();//adds status code pages middleware to the pipeline, also in 7807 format
 
 //Using the default endpoint routing
 
 //DEFAULT landing endpoint showing connection and test data
-app.MapGet("/", async (HttpContext context) =>
+app.MapGet("/", HtmlResults()=>
 {
-    context.Response.Headers["Content-Type"] = "text/html";
-    await context.Response.WriteAsync($"<h2>Test Data</h2><h3>Your page has loaded properly</h3><h4>Your endpoints are avilable for data...</h4>");
-    await context.Response.WriteAsync($"The Method is: {context.Request.Method}<br/>");
-    await context.Response.WriteAsync($"The URL is: {context.Request.Path}<br/>");
-    await context.Response.WriteAsync($"<br/><b>Headers</b>: <br/>");
-    await context.Response.WriteAsync($"<ul>");
-
-    foreach (var key in context.Request.Headers.Keys)
-    {
-        await context.Response.WriteAsync($"<li><b>{key}</b>: {context.Request.Headers[key]}</li>");
-    }
-    await context.Response.WriteAsync($"</ul>");
+    string html = "<h2>Test Data</h2><h3>Your page has loaded properly</h3><h4>Your endpoints are avilable for data...</h4><h4>This is a demonstration project showing different aspects of ASP.NET Core 9.0</h4>";
+    
+    return new HtmlResults(html);
 });//End Default
 
 app.MapGet ("/employees", () =>
