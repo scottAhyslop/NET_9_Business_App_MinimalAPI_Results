@@ -28,18 +28,18 @@ app.MapGet("/", async (HttpContext context) =>
 
 app.MapGet ("/employees", () =>
 {
-    var employees = EmployeesRepository.GetEmployees();
+    var employees = GetEmployees();
     return TypedResults.Ok(employees);//serializes response and puts into the HTML body
 });
 //POST /employees AddEmployee
 app.MapPost("/employees", (Employee employee) =>
 {
-    if (employee is null || employee.EmployeeId <=0)
+    if (employee is null || employee.EmployeeId <= 0)
     {
-        return  Results.BadRequest("Employee is not found or is invalid...");
+        return Results.BadRequest("Employee is not found or is invalid...");
     }
-    EmployeesRepository.AddEmployee(employee);
-    return Results.Ok($"Employee {employee.EmployeeFirstName} {employee.EmployeeLastName} added successfully");
+    AddEmployee(employee);
+    return TypedResults.Created($"/employees/{employee.EmployeeId}", employee);
 
 }).WithParameterValidation();
 app.Run();

@@ -25,7 +25,8 @@ namespace NET_9_Business_App_MinimalAPI_Results.Models
         {
             if (employee is not null)
             {
-
+                int maxId = employees.Max(emp => emp.EmployeeId);//get max id from list
+                employee.EmployeeId = maxId + 1; //increment id by 1
                 employees.Add(employee);
 
             }
