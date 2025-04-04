@@ -36,7 +36,11 @@ app.MapPost("/employees", (Employee employee) =>
 {
     if (employee is null || employee.EmployeeId <= 0)
     {
-        return Results.BadRequest("Employee is not found or is invalid...");
+        return Results.ValidationProblem(new Dictionary<string, string[]>
+           {
+            {"id", new[]{"Employee is not provided or is not valid."} }
+           }           
+          );
     }
     AddEmployee(employee);
     return TypedResults.Created($"/employees/{employee.EmployeeId}", employee);
