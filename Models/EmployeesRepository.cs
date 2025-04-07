@@ -37,7 +37,7 @@ namespace NET_9_Business_App_MinimalAPI_Results.Models
         {
             if (employee is not null)//vlidate Employee object passed in
             {
-                var emp = employees.FirstOrDefault(x => x.EmployeeId == employee.EmployeeId);//check if existing
+                var emp = employees.FirstOrDefault(emp => emp.EmployeeId == employee.EmployeeId);//check if existing
 
                 if (emp is not null)//if exists, update with employee param
                 {
@@ -54,10 +54,9 @@ namespace NET_9_Business_App_MinimalAPI_Results.Models
         }//end UpdateEmployee
 
         //delete an employee
-        public static bool DeleteEmployee(int employeeId)
+        public static bool DeleteEmployee(Employee? employee)
         {
-            var employee = employees.FirstOrDefault(emp => emp.EmployeeId == employeeId); //get employee based on param
-            if (employee != null)//check if employee is valid
+            if (employee is not null)//check if employee is valid
             {
                 employees.Remove(employee);
                 return true;
