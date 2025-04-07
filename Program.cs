@@ -5,7 +5,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddProblemDetails();//adds the problem details middleware to the pipeline
 
-builder.Services.AddTransient<IEmployeesRepository, EmployeesRepository>();//register the employees repository with the DI container
+builder.Services.AddSingleton<IEmployeesRepository, EmployeesRepository>();//register the employees repository with the DI container
 
 var app = builder.Build();
 
@@ -19,3 +19,6 @@ app.UseStatusCodePages();//adds status code pages middleware to the pipeline, al
 app.MapEmployeeEndpoints();//adds the employee endpoints to the pipeline
 
 app.Run();
+
+//NOTES:
+//use singleton for services when you only want a single instance of a data store

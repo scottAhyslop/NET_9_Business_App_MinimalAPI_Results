@@ -46,12 +46,11 @@
               "Title": "EmployeeEndpoints.cs",
               "DocumentMoniker": "F:\\NET_9_Sample\\NET_9_Business_App_MinimalAPI_Results\\Endpoints\\EmployeeEndpoints.cs",
               "RelativeDocumentMoniker": "Endpoints\\EmployeeEndpoints.cs",
-              "ToolTip": "F:\\NET_9_Sample\\NET_9_Business_App_MinimalAPI_Results\\Endpoints\\EmployeeEndpoints.cs*",
-              "RelativeToolTip": "Endpoints\\EmployeeEndpoints.cs*",
+              "ToolTip": "F:\\NET_9_Sample\\NET_9_Business_App_MinimalAPI_Results\\Endpoints\\EmployeeEndpoints.cs",
+              "RelativeToolTip": "Endpoints\\EmployeeEndpoints.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T17:03:09.543Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-07T17:03:09.543Z"
             },
             {
               "$type": "Document",
@@ -71,9 +70,9 @@
               "Title": "Program.cs",
               "DocumentMoniker": "F:\\NET_9_Sample\\NET_9_Business_App_MinimalAPI_Results\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "F:\\NET_9_Sample\\NET_9_Business_App_MinimalAPI_Results\\Program.cs*",
-              "RelativeToolTip": "Program.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAkAAAAAAAAAA==",
+              "ToolTip": "F:\\NET_9_Sample\\NET_9_Business_App_MinimalAPI_Results\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-04T17:08:43.783Z",
               "EditorCaption": ""
@@ -88,8 +87,7 @@
               "RelativeToolTip": "Models\\EmployeesRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T17:05:58.362Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-04T17:05:58.362Z"
             },
             {
               "$type": "Document",
