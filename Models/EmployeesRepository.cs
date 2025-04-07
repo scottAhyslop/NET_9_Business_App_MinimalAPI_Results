@@ -2,9 +2,9 @@
 namespace NET_9_Business_App_MinimalAPI_Results.Models
 {
     // Repository to hold all employees
-    public static class EmployeesRepository
+    public class EmployeesRepository : IEmployeesRepository
     {
-        private static List<Employee> employees = new List<Employee>
+        private List<Employee> employees = new List<Employee>
         {
         new Employee(1,"Ozzy","Osbourne", "Membranophone Specialist", 500000),
         new Employee(2,"Tony", "Iommi", "Guitar Player", 500000),
@@ -13,15 +13,15 @@ namespace NET_9_Business_App_MinimalAPI_Results.Models
         };
 
         //get a list of employees
-        public static List<Employee> GetEmployees() => employees;
+        public List<Employee> GetEmployees() => employees;
 
-        public static Employee? GetEmployeeById(int employeeId)
+        public Employee? GetEmployeeById(int employeeId)
         {
             return employees.FirstOrDefault(emp => emp.EmployeeId == employeeId);
         }
 
         //add an employee
-        public static void AddEmployee(Employee employee)
+        public void AddEmployee(Employee employee)
         {
             if (employee is not null)
             {
@@ -33,7 +33,7 @@ namespace NET_9_Business_App_MinimalAPI_Results.Models
         }//end AddEmployee
 
         //update an employee
-        public static bool UpdateEmployee(Employee? employee)
+        public bool UpdateEmployee(Employee? employee)
         {
             if (employee is not null)//vlidate Employee object passed in
             {
@@ -54,7 +54,7 @@ namespace NET_9_Business_App_MinimalAPI_Results.Models
         }//end UpdateEmployee
 
         //delete an employee
-        public static bool DeleteEmployee(Employee? employee)
+        public bool DeleteEmployee(Employee? employee)
         {
             if (employee is not null)//check if employee is valid
             {

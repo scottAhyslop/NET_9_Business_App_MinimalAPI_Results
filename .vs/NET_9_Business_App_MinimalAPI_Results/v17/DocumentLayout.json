@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "F:\\NET_9_Sample\\NET_9_Business_App_MinimalAPI_Results\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FBD3DE52-6073-433A-AF4F-EB2DD9158828}|NET_9_Business_App_MinimalAPI_Results.csproj|f:\\net_9_sample\\net_9_business_app_minimalapi_results\\models\\employeesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FBD3DE52-6073-433A-AF4F-EB2DD9158828}|NET_9_Business_App_MinimalAPI_Results.csproj|solutionrelative:models\\employeesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FBD3DE52-6073-433A-AF4F-EB2DD9158828}|NET_9_Business_App_MinimalAPI_Results.csproj|f:\\net_9_sample\\net_9_business_app_minimalapi_results\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FBD3DE52-6073-433A-AF4F-EB2DD9158828}|NET_9_Business_App_MinimalAPI_Results.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FBD3DE52-6073-433A-AF4F-EB2DD9158828}|NET_9_Business_App_MinimalAPI_Results.csproj|f:\\net_9_sample\\net_9_business_app_minimalapi_results\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FBD3DE52-6073-433A-AF4F-EB2DD9158828}|NET_9_Business_App_MinimalAPI_Results.csproj|solutionrelative:models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FBD3DE52-6073-433A-AF4F-EB2DD9158828}|NET_9_Business_App_MinimalAPI_Results.csproj|f:\\net_9_sample\\net_9_business_app_minimalapi_results\\endpoints\\employeeendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBD3DE52-6073-433A-AF4F-EB2DD9158828}|NET_9_Business_App_MinimalAPI_Results.csproj|solutionrelative:endpoints\\employeeendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBD3DE52-6073-433A-AF4F-EB2DD9158828}|NET_9_Business_App_MinimalAPI_Results.csproj|f:\\net_9_sample\\net_9_business_app_minimalapi_results\\models\\employeesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBD3DE52-6073-433A-AF4F-EB2DD9158828}|NET_9_Business_App_MinimalAPI_Results.csproj|solutionrelative:models\\employeesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FBD3DE52-6073-433A-AF4F-EB2DD9158828}|NET_9_Business_App_MinimalAPI_Results.csproj|f:\\net_9_sample\\net_9_business_app_minimalapi_results\\results\\htmlresults.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FBD3DE52-6073-433A-AF4F-EB2DD9158828}|NET_9_Business_App_MinimalAPI_Results.csproj|solutionrelative:results\\htmlresults.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBD3DE52-6073-433A-AF4F-EB2DD9158828}|NET_9_Business_App_MinimalAPI_Results.csproj|f:\\net_9_sample\\net_9_business_app_minimalapi_results\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBD3DE52-6073-433A-AF4F-EB2DD9158828}|NET_9_Business_App_MinimalAPI_Results.csproj|solutionrelative:models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,6 +42,19 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EmployeeEndpoints.cs",
+              "DocumentMoniker": "F:\\NET_9_Sample\\NET_9_Business_App_MinimalAPI_Results\\Endpoints\\EmployeeEndpoints.cs",
+              "RelativeDocumentMoniker": "Endpoints\\EmployeeEndpoints.cs",
+              "ToolTip": "F:\\NET_9_Sample\\NET_9_Business_App_MinimalAPI_Results\\Endpoints\\EmployeeEndpoints.cs",
+              "RelativeToolTip": "Endpoints\\EmployeeEndpoints.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T17:03:09.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
               "Title": "HtmlResults.cs",
               "DocumentMoniker": "F:\\NET_9_Sample\\NET_9_Business_App_MinimalAPI_Results\\Results\\HtmlResults.cs",
@@ -50,33 +67,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "F:\\NET_9_Sample\\NET_9_Business_App_MinimalAPI_Results\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "F:\\NET_9_Sample\\NET_9_Business_App_MinimalAPI_Results\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAA0wCIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-04T17:08:43.783Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "EmployeesRepository.cs",
               "DocumentMoniker": "F:\\NET_9_Sample\\NET_9_Business_App_MinimalAPI_Results\\Models\\EmployeesRepository.cs",
               "RelativeDocumentMoniker": "Models\\EmployeesRepository.cs",
               "ToolTip": "F:\\NET_9_Sample\\NET_9_Business_App_MinimalAPI_Results\\Models\\EmployeesRepository.cs",
               "RelativeToolTip": "Models\\EmployeesRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-04T17:05:58.362Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Employee.cs",
               "DocumentMoniker": "F:\\NET_9_Sample\\NET_9_Business_App_MinimalAPI_Results\\Models\\Employee.cs",
               "RelativeDocumentMoniker": "Models\\Employee.cs",
@@ -84,8 +101,7 @@
               "RelativeToolTip": "Models\\Employee.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T17:05:34.353Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-04T17:05:34.353Z"
             }
           ]
         }
