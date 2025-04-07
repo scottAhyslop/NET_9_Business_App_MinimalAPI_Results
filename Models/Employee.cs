@@ -7,9 +7,10 @@
         public string EmployeeFirstName { get; set; }
         public string EmployeeLastName { get; set; }
         public string EmployeePosition { get; set; }
+        public string EmployeeDepartment { get; set; }
         public double EmployeeSalary { get; set; }
 
-        public Employee(int employeeId, string employeeFirstName, string employeeLastName, string employeePosition, double employeeSalary)
+        public Employee(int employeeId, string employeeFirstName, string employeeLastName, string employeePosition, string employeeDepartment, double employeeSalary)
         {
             EmployeeId = employeeId;
             EmployeeFirstName = employeeFirstName;
